@@ -12,7 +12,7 @@ function App() {
     e.preventDefault()
 
     const form = e.target
-    const date = new Date().toLocaleString()
+    const date = new Date()
 
     const newPosts = {
       title: form.title.value,
