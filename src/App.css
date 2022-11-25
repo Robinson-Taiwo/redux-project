@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* the entire app */
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: rgb(40, 40, 80);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* form session */
+.form {
+  background-color: rgb(31, 31, 41);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  width: 25%;
+  height: 100%;
+  scroll-behavior: smooth;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 120rem;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  height: 8rem;
+  border-radius: 9px;
+}
+
+.author {
+  height: 8rem;
+  border-radius: 9px;
+}
+
+.button {
+  height: 8rem;
+  border-radius: 9px;
+}
+
+
+
+/* posts session */
+
+.posts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  overflow: auto;
+
+}
+
+/* container */
+
+.container {
+  margin: 4rem;
+  background-color: cornsilk;
+  max-width: 543px;
+  max-height: fit-content;
+  /* width: max-content;
+ height: fit-content; */
+  height: 643px;
+  width: 543px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+
+}
+
+.title-cont {
+  display: flex;
+  justify-content: center;
+
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  position: relative;
+  background-color: black;
 }
